@@ -1,6 +1,6 @@
 import ToolBar from "@/components/ToolBar";
 
-export default function page() {
+export default function StartPage() {
   return (
     <div className="flex h-screen text-white font-sans bg-[#1c1c1c]">
       {/* 고정된 ToolBar 컴포넌트 */}
