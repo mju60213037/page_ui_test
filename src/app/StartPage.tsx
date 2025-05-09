@@ -1,15 +1,13 @@
-export default function Menu1Page() {
+import ToolBar from "@/components/ToolBar";
+
+export default function StartPage() {
   return (
     <div className="flex h-screen text-white font-sans bg-[#1c1c1c]">
-      {/* ToolBar */}
-      <div className="w-[50px] bg-[#e0e0e0] flex flex-col items-center py-2 gap-2 shrink-0">
-        <img src="/tool1.png" alt="Tool 1" width={30} height={30} />
-        <img src="/tool2.png" alt="Tool 2" width={30} height={30} />
-        <img src="/tool3.png" alt="Tool 3" width={30} height={30} />
-      </div>
+      {/* 고정된 ToolBar 컴포넌트 */}
+      <ToolBar />
 
-      {/* Right Section */}
-      <div className="flex flex-col flex-1">
+      {/* 오른쪽 콘텐츠 영역 */}
+      <div className="ml-[50px] flex flex-col flex-1">
         {/* Header */}
         <div className="flex justify-between items-center px-5 py-2 border-b-2 border-white relative">
           <div className="flex items-center">
@@ -29,7 +27,7 @@ export default function Menu1Page() {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Content Area */}
         <div className="flex flex-1 overflow-auto">
           {/* MenuBar */}
           <div className="w-[180px] bg-[#2a2a2a] border-r-2 border-white shrink-0">
@@ -50,9 +48,9 @@ export default function Menu1Page() {
             ))}
           </div>
 
-          {/* Main Panel */}
+          {/* MainPanel */}
           <div className="flex-1 px-10 py-6 flex flex-col gap-6">
-            {/* Search Box */}
+            {/* Search Panel */}
             <div className="flex">
               <input
                 type="text"
@@ -64,7 +62,7 @@ export default function Menu1Page() {
               </button>
             </div>
 
-            {/* Search Log Panel */}
+            {/* Search Log */}
             <div className="border-2 border-white rounded-lg p-4">
               <h4 className="text-lg mb-2">최근 검색 기록 (Search Log)</h4>
               <div className="flex flex-wrap gap-2">
@@ -79,7 +77,7 @@ export default function Menu1Page() {
               </div>
             </div>
 
-            {/* Announcement Panel */}
+            {/* Announcement & Recommended Post */}
             <div className="border-2 border-white rounded-lg p-4">
               <h4 className="text-lg mb-2">공지 / 업데이트 사항 (Announcement)</h4>
               <hr className="border-white my-2" />
@@ -122,9 +120,9 @@ export default function Menu1Page() {
                 </div>
               </div>
             </div>
-          </div> {/* /main */}
-        </div> {/* /content */}
-      </div> {/* /right-section */}
+          </div> {/* /MainPanel */}
+        </div> {/* /Content */}
+      </div> {/* /Right Section */}
     </div>
   );
 }
