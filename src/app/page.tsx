@@ -1,13 +1,11 @@
-import Image from "next/image";
-
 export default function Menu1Page() {
   return (
     <div className="flex h-screen text-white font-sans bg-[#1c1c1c]">
       {/* ToolBar */}
       <div className="w-[50px] bg-[#e0e0e0] flex flex-col items-center py-2 gap-2 shrink-0">
-        <Image src="/tool1.png" alt="Tool 1" width={30} height={30} />
-        <Image src="/tool2.png" alt="Tool 2" width={30} height={30} />
-        <Image src="/tool3.png" alt="Tool 3" width={30} height={30} />
+        <img src="/tool1.png" alt="Tool 1" width={30} height={30} />
+        <img src="/tool2.png" alt="Tool 2" width={30} height={30} />
+        <img src="/tool3.png" alt="Tool 3" width={30} height={30} />
       </div>
 
       {/* Right Section */}
@@ -15,7 +13,7 @@ export default function Menu1Page() {
         {/* Header */}
         <div className="flex justify-between items-center px-5 py-2 border-b-2 border-white relative">
           <div className="flex items-center">
-            <Image src="/LOGO.png" alt="Logo" width={60} height={60} />
+            <img src="/LOGO.png" alt="Logo" width={60} height={60} />
             <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold">
               Web Page Name: PROJECT NAME
             </div>
@@ -62,7 +60,7 @@ export default function Menu1Page() {
                 className="flex-1 bg-[#444] text-white px-4 py-2 rounded-l-lg text-sm"
               />
               <button className="bg-[#444] px-3 py-2 rounded-r-lg hover:bg-[#555]">
-                <Image src="/search.png" alt="Search" width={20} height={20} />
+                <img src="/search.png" alt="Search" width="20" height="20" />
               </button>
             </div>
 
@@ -105,11 +103,11 @@ export default function Menu1Page() {
                     이번주 추천 게시물 (Recommended Post)
                   </h4>
                   <div className="flex items-center p-3 rounded-lg hover:bg-[#2a2a2a] transition">
-                    <Image
+                    <img
                       src="/recomimg.png"
                       alt="추천 이미지"
-                      width={60}
-                      height={60}
+                      width="60"
+                      height="60"
                       className="rounded mr-3"
                     />
                     <div className="text-sm leading-snug">
