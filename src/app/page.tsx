@@ -85,13 +85,13 @@ export default function Menu1Page() {
               <hr className="border-white my-2" />
               <div className="flex justify-between">
                 {/* Announcement List */}
-                <div className="flex-1 text-[#bbccdd] space-y-4">
+                <div className="flex-1 space-y-4">
                   {["2025.05.02 (금)", "2025.04.30 (수)"].map((date, i) => (
                     <div key={i}>
-                      <strong className="text-white">{date}</strong>
+                      <strong className="text-[#bbccdd]">{date}</strong>
                       <ul className="list-disc ml-6">
-                        <li>공지 사항 1</li>
-                        <li>공지 사항 2</li>
+                        <li className="text-white">공지 사항 1</li>
+                        <li className="text-white">공지 사항 2</li>
                       </ul>
                     </div>
                   ))}
