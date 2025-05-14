@@ -1,33 +1,14 @@
 import ToolBar from "@/components/ToolBar";
+import Header from "@/components/Header";
 
-export default function page() {
+export default function StartPage() {
   return (
     <div className="flex h-screen text-white font-sans bg-[#1c1c1c]">
-      {/* 고정된 ToolBar 컴포넌트 */}
       <ToolBar />
 
-      {/* 오른쪽 콘텐츠 영역 */}
       <div className="ml-[50px] flex flex-col flex-1">
-        {/* Header */}
-        <div className="flex justify-between items-center px-5 py-2 border-b-2 border-white relative">
-          <div className="flex items-center">
-            <img src="/LOGO.png" alt="Logo" width={60} height={60} />
-            <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold">
-              Web Page Name: PROJECT NAME
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <select className="bg-transparent text-white border border-white px-2 py-1 text-sm hover:bg-[#444]">
-              <option>한국어</option>
-              <option>ENG</option>
-            </select>
-            <button className="border border-white px-3 py-1 text-sm hover:bg-[#444]">
-              Log In
-            </button>
-          </div>
-        </div>
+        <Header />
 
-        {/* Content Area */}
         <div className="flex flex-1 overflow-auto">
           {/* MenuBar */}
           <div className="w-[180px] bg-[#2a2a2a] border-r-2 border-white shrink-0">
@@ -48,7 +29,7 @@ export default function page() {
             ))}
           </div>
 
-          {/* MainPanel */}
+          {/* Main Panel */}
           <div className="flex-1 px-10 py-6 flex flex-col gap-6">
             {/* Search Panel */}
             <div className="flex">
@@ -120,7 +101,7 @@ export default function page() {
                 </div>
               </div>
             </div>
-          </div> {/* /MainPanel */}
+          </div> {/* /Main Panel */}
         </div> {/* /Content */}
       </div> {/* /Right Section */}
     </div>
