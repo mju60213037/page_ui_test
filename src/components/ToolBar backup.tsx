@@ -7,13 +7,6 @@ export default function ToolBar() {
 
   return (
     <div className="fixed top-0 left-0 h-screen w-[50px] bg-[#e0e0e0] flex flex-col items-center py-2 gap-4 z-50">
-
-      <img
-        src="/LOGO.jpg"
-        alt="Logo"
-        className="w-full h-[60px] object-contain"
-      />
-
       {/* 홈 버튼 */}
       <button onClick={() => router.push("/")} title="홈으로 가기">
         <img src="/tool1.png" alt="Home" width={30} height={30} />
