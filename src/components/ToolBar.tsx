@@ -6,13 +6,13 @@ export default function ToolBar() {
   const router = useRouter();
 
   return (
-    <div className="fixed top-0 left-0 h-screen w-[50px] bg-[#e0e0e0] flex flex-col items-center py-0 z-50">
-      {/* 로고 영역 */}
-      <div className="w-full h-[150px] flex items-center justify-center bg-white">
-        <span className="font-bold text-black text-center p-2">Logo</span>
-      </div>
-
+    <div className="fixed top-0 left-0 h-screen w-[50px] bg-[#e0e0e0] flex flex-col items-center py-2 gap-4 z-50">
       {/* 홈 버튼 */}
+      <button onClick={() => router.push("/")} title="홈으로 가기">
+        <img src="/tool1.png" alt="Home" width={30} height={30} />
+      </button>
+
+      {/* 뒤로가기 버튼 */}
       <button onClick={() => router.back()} title="이전 페이지로">
         <img src="/tool2.png" alt="Back" width={30} height={30} />
       </button>

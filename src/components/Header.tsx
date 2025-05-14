@@ -1,7 +1,7 @@
 export default function Header() {
   return (
-    <div className="flex justify-between items-center px-5 py-2 border-b-2 border-white">
-      {/* 헤더에서 로고 완전히 제거하고 중앙에 제목만 표시 */}
+    <div className="flex justify-between items-center px-5 py-2 h-[60px] border-b-2 border-white bg-black">
+      {/* 제목 중앙에 표시 */}
       <div className="w-full text-center text-xl font-bold">
         Web Page Name: PROJECT NAME
       </div>

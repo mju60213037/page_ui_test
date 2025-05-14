@@ -6,12 +6,27 @@ export default function StartPage() {
     <div className="flex h-screen text-white font-sans bg-[#1c1c1c]">
       <ToolBar />
 
-      <div className="ml-[50px] flex flex-col flex-1">
-        <Header />
+      <div className="flex flex-col flex-1">
+        {/* 로고와 메뉴바 영역 */}
+        <div className="flex">
+          {/* 로고 영역 */}
+          <div className="bg-white h-[60px] w-[245px] flex items-center justify-center">
+            <img
+              src="/LOGO.jpg"
+              alt="명지대학교"
+              className="h-full object-contain"
+            />
+          </div>
+          
+          {/* 헤더 영역 */}
+          <div className="flex-1">
+            <Header />
+          </div>
+        </div>
 
         <div className="flex flex-1 overflow-auto">
           {/* MenuBar */}
-          <div className="w-[180px] bg-[#2a2a2a] border-r-2 border-white shrink-0">
+          <div className="w-[245px] bg-[#2a2a2a] border-r-2 border-white shrink-0">
             <h4 className="font-bold px-4 py-3">※ Menu Bar</h4>
             {[1, 2, 3].map((toolNum) => (
               <div key={toolNum} className="bg-[#2a2a2a]">
